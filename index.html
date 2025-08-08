@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TireFixMiami.com - Reparación de Llantas 24/7 Miami | Tire Repair Wynwood Brickell Midtown</title>
+    <meta name="description" content="TireFixMiami.com - Reparación de llantas 24/7 y gomas usadas en Miami. Emergency tire repair serving Wynwood, Brickell, Midtown, Little River, Downtown, Edgewater, Morningside. Mobile service!">
+    <meta name="keywords" content="tire fix miami, reparacion llantas miami, gomas usadas miami, tire repair wynwood, llantas brickell, gomas midtown, mobile tire repair miami, servicio movil llantas, emergency tire service">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23ff6b35'/><text x='50' y='60' font-size='40' text-anchor='middle' fill='white'>🔧</text></svg>" type="image/svg+xml">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TireFixMiami.com - 24/7 Emergency Tire Repair Miami">
+    <meta property="og:description" content="Fast mobile tire repair & used tires in Miami. We come to you! Serving Wynwood, Brickell, Midtown & more. Call now!">
+    <meta property="og:url" content="https://tirefixmiami.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tirefixmiami.com/og-image.jpg">
+    
+    <!-- Local SEO Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "TireFixMiami.com",
+        "alternateName": "Tire Fix Miami - Reparación de Llantas",
+        "description": "Professional 24/7 mobile tire repair and used tire sales serving Miami neighborhoods",
+        "url": "https://tirefixmiami.com",
+        "telephone": "+1-305-TIRE-FIX",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Serving All Miami Areas",
+            "addressLocality": "Miami",
+            "addressRegion": "FL",
+            "postalCode": "33132"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "25.7617",
+            "longitude": "-80.1918"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.7617",
+                "longitude": "-80.1918"
+            },
+            "geoRadius": "25000"
+        },
+        "areaServed": ["Wynwood", "Brickell", "Midtown Miami", "Little River", "Downtown Miami", "Edgewater", "Morningside", "Design District", "South Beach", "Coral Gables"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Mobile Tire Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Emergency Tire Repair",
+                        "description": "24/7 mobile tire repair and roadside assistance"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Used Tire Sales",
+                        "description": "Quality inspected used tires with warranty"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Tire Installation",
+                        "description": "Mobile tire installation and balancing"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://wa.me/13057843349"
+        ]
+    }
+    </script>
+
+    <!-- Google Analytics (Replace with your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+        }
+
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            background: rgba(255,255,255,0.95);
+            padding: 10px 15px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .language-toggle button {
+            background: none;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 2px;
+            cursor: pointer;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .language-toggle button.active {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .language-toggle button:hover {
+            background: #f0f0f0;
+        }
+
+        .language-toggle button.active:hover {
+            background: #e55a2b;
+        }
+
+        .top-bar {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><circle fill="%23666" cx="200" cy="500" r="80"/><circle fill="%23666" cx="400" cy="500" r="80"/><circle fill="%23666" cx="600" cy="500" r="80"/><circle fill="%23666" cx="800" cy="500" r="80"/><path d="M0,0 L1200,0 L1200,400 Q600,500 0,400 Z" fill="%23ff6b35" opacity="0.1"/></svg>');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 35px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,215,0,0.1) 0%, rgba(255,69,0,0.1) 100%);
+            animation: pulse 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.1; }
+            to { opacity: 0.3; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand-logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(255,107,53,0.4);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            animation: glow 2s ease-in-out infinite alternate;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .whatsapp-button {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 8px 25px rgba(255,107,53,0.4); }
+            to { box-shadow: 0 12px 35px rgba(255,107,53,0.7); }
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,107,53,0.6);
+        }
+
+        .whatsapp-button:hover {
+            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+        }
+
+        .phone-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin: 20px 0;
+            animation: phoneGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes phoneGlow {
+            from { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(255,215,0,0.5); }
+            to { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.8); }
+        }
+
+        .services {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2a5298;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,107,53,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: #ff6b35;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .locations {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+        }
+
+        .locations h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2a5298;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .location-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .location-card:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border-color: #ff6b35;
+        }
+
+        .emergency {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .emergency::before {
+            content: '🚨';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .emergency h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .emergency p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,107,53,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 3px rgba(255,107,53,0.1);
+            transform: translateY(-2px);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            color: white;
+            padding: 18px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(42,82,152,0.4);
+            background: linear-gradient(45deg, #3a62a8, #2e4c82);
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #ff6b35;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .phone-number {
+                font-size: 2rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+            .language-toggle {
+                top: 45px;
+                right: 10px;
+                padding: 8px 12px;
+            }
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .floating-cta .cta-button {
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            min-width: auto;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        .bilingual-section {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .bilingual-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .keyword-highlight {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .keyword-highlight:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .trust-indicators {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .trust-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .success-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            z-index: 10001;
+            text-align: center;
+            display: none;
+        }
+
+        .success-popup.show {
+            display: block;
+            animation: popIn 0.3s ease-out;
+        }
+
+        @keyframes popIn {
+            from { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+            to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            display: none;
+        }
+
+        .overlay.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            ⚡ EMERGENCY TIRE SERVICE 24/7 | Call Now: <strong>(305) 784-3349</strong> | WhatsApp Available ⚡
+        </div>
+    </div>
+
+    <div class="language-toggle">
+        <button onclick="switchLanguage('en')" id="en-btn" class="active">🇺🇸 EN</button>
+        <button onclick="switchLanguage('es')" id="es-btn">🇪🇸 ES</button>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="en-content" class="lang-content active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="brand-logo">🔧 TireFixMiami.com 🚗</div>
+                    <h1>FLAT TIRE? WE'RE ON OUR WAY!</h1>
+                    <p>Miami's #1 Mobile Tire Repair & Used Tire Service</p>
+                    <div class="phone-number">📞 (305) 784-3349</div>
+                    <p style="font-size: 1.3rem; margin-bottom: 30px;">
+                        <strong>Serving All Miami:</strong> Wynwood • Brickell • Midtown • Little River • Downtown • Edgewater • Morningside • Design District
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="tel:3057843349" class="cta-button" onclick="trackCall('hero_call')">📞 CALL NOW!</a>
+                        <a href="https://wa.me/13057843349?text=Hi! I need emergency tire repair in Miami. My location is:" class="cta-button whatsapp-button" onclick="trackWhatsApp('hero_whatsapp')">💬 WhatsApp</a>
+                    </div>
+                    <p style="font-size: 1.1rem; opacity: 0.9;">
+                        ✅ 15-Minute Response • ✅ Mobile Service • ✅ 24/7 Emergency • ✅ Quality Used Tires
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="trust-indicators">
+            <div class="container">
+                <h3>Why Choose TireFixMiami.com?</h3>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="icon">⚡</div>
+                        <h4>15-Min Response</h4>
+                        <p>Fastest in Miami</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">🏆</div>
+                        <h4>5+ Years Experience</h4>
+                        <p>Trusted by 1000+ customers</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">💰</div>
+                        <h4>Best Prices</h4>
+                        <p>Quality used tires from $25</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">✅</div>
+                        <h4>100% Guarantee</h4>
+                        <p>Satisfaction guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Mobile Tire Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Mobile Service</h3>
+                        <p>We come to you! Home, office, roadside - anywhere in Miami. No need to wait for a tow truck!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>15-Minute Response</h3>
+                        <p>Average 15-minute response time in high-traffic areas. Get back on the road fast!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💰</div>
+                        <h3>Quality Used Tires</h3>
+                        <p>Premium used tires starting at $25. All tires professionally inspected & guaranteed.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Expert Repairs</h3>
+                        <p>Professional tire repair, patching, plugging, and on-the-spot balancing services.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⏰</div>
+                        <h3>24/7 Emergency</h3>
+                        <p>Tire emergencies happen anytime. We're available 24/7, including weekends & holidays!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💳</div>
+                        <h3>Easy Payment</h3>
+                        <p>Cash, card, Zelle, CashApp accepted. Transparent pricing with no hidden fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations">
+            <div class="container">
+                <h2>Premium Miami Areas We Serve</h2>
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>🎨 Wynwood</h3>
+                        <p>Art district mobile tire service</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏙️ Brickell</h3>
+                        <p>Financial district emergency service</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌃 Midtown</h3>
+                        <p>Urban tire repair solutions</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌊 Little River</h3>
+                        <p>Riverside tire specialists</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏢 Downtown Miami</h3>
+                        <p>Business district mobile service</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌴 Edgewater</h3>
+                        <p>Bayfront tire experts</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏖️ Morningside</h3>
+                        <p>Exclusive bay area service</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>✨ Design District</h3>
+                        <p>Luxury area tire service</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: #666;">
+                    <strong>Also serving:</strong> South Beach, Coral Gables, Coconut Grove, Key Biscayne, and surrounding areas
+                </p>
+            </div>
+        </section>
+
+        <section class="emergency">
+            <div class="container">
+                <h2>🚨 EMERGENCY TIRE SERVICE 🚨</h2>
+                <p style="font-size: 1.4rem; margin-bottom: 30px;">
+                    Blowout? Flat tire? Puncture? Stranded on I-95?<br>
+                    <strong>Call TireFixMiami.com and we'll be there in 15 minutes!</strong>
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:3057843349" class="cta-button" onclick="trackCall('emergency_call')">📞 EMERGENCY: (305) 784-3349</a>
+                    <a href="https://wa.me/13057843349?text=🚨 EMERGENCY! I have a flat tire and need immediate help. My location is:" class="cta-button whatsapp-button" onclick="trackWhatsApp('emergency_whatsapp')">🚨 Emergency WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SPANISH CONTENT -->
+    <div id="es-content" class="lang-content">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="brand-logo">🔧 TireFixMiami.com 🚗</div>
+                    <h1>¿LLANTA PINCHADA? ¡VAMOS PARA ALLÁ!</h1>
+                    <p>El Servicio #1 de Reparación de Llantas Móvil en Miami</p>
+                    <div class="phone-number">📞 (305) 784-3349</div>
+                    <p style="font-size: 1.3rem; margin-bottom: 30px;">
+                        <strong>Servimos Todo Miami:</strong> Wynwood • Brickell • Midtown • Little River • Downtown • Edgewater • Morningside • Design District
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="tel:3057843349" class="cta-button" onclick="trackCall('hero_call_es')">📞 ¡LLAMA YA!</a>
+                        <a href="https://wa.me/13057843349?text=¡Hola! Necesito reparación de llantas de emergencia en Miami. Mi ubicación es:" class="cta-button whatsapp-button" onclick="trackWhatsApp('hero_whatsapp_es')">💬 WhatsApp</a>
+                    </div>
+                    <p style="font-size: 1.1rem; opacity: 0.9;">
+                        ✅ Respuesta en 15 Min • ✅ Servicio Móvil • ✅ Emergencias 24/7 • ✅ Gomas Usadas de Calidad
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="bilingual-section">
+            <div class="container">
+                <h3>🔍 TireFixMiami.com - Especialistas en Llantas y Gomas</h3>
+                <p>Palabras clave que nos buscan:</p>
+                <div style="margin: 20px 0;">
+                    <span class="keyword-highlight">reparación llantas miami</span>
+                    <span class="keyword-highlight">gomas usadas</span>
+                    <span class="keyword-highlight">llantas pinchadas</span>
+                    <span class="keyword-highlight">servicio móvil</span>
+                    <span class="keyword-highlight">emergencia 24/7</span>
+                    <span class="keyword-highlight">cambio de gomas</span>
+                    <span class="keyword-highlight">tire fix miami</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-indicators">
+            <div class="container">
+                <h3>¿Por Qué Elegir TireFixMiami.com?</h3>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="icon">⚡</div>
+                        <h4>Respuesta en 15 Min</h4>
+                        <p>El más rápido de Miami</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">🏆</div>
+                        <h4>5+ Años Experiencia</h4>
+                        <p>Confianza de 1000+ clientes</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">💰</div>
+                        <h4>Mejores Precios</h4>
+                        <p>Gomas usadas desde $25</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="icon">✅</div>
+                        <h4>100% Garantía</h4>
+                        <p>Satisfacción garantizada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Nuestros Servicios Móviles de Llantas</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Servicio Móvil</h3>
+                        <p>¡Vamos donde estés! Casa, oficina, carretera - en cualquier lugar de Miami. ¡No necesitas grúa!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Respuesta en 15 Minutos</h3>
+                        <p>Tiempo promedio de respuesta: 15 minutos en áreas de alto tráfico. ¡Vuelve a la carretera rápido!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💰</div>
+                        <h3>Gomas Usadas de Calidad</h3>
+                        <p>Gomas usadas premium desde $25. Todas inspeccionadas profesionalmente y garantizadas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Reparaciones Expertas</h3>
+                        <p>Reparación profesional de llantas, parches, tapones y balanceo en el lugar.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⏰</div>
+                        <h3>Emergencias 24/7</h3>
+                        <p>Las emergencias pasan a cualquier hora. ¡Disponibles 24/7, fines de semana y feriados!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💳</div>
+                        <h3>Pago Fácil</h3>
+                        <p>Aceptamos efectivo, tarjeta, Zelle, CashApp. Precios transparentes sin costos ocultos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations">
+            <div class="container">
+                <h2>Áreas Premium de Miami que Servimos</h2>
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3>🎨 Wynwood</h3>
+                        <p>Servicio móvil distrito artístico</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏙️ Brickell</h3>
+                        <p>Servicio emergencia distrito financiero</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌃 Midtown</h3>
+                        <p>Soluciones urbanas de llantas</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌊 Little River</h3>
+                        <p>Especialistas junto al río</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏢 Downtown Miami</h3>
+                        <p>Servicio móvil distrito comercial</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🌴 Edgewater</h3>
+                        <p>Expertos frente a la bahía</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>🏖️ Morningside</h3>
+                        <p>Servicio exclusivo área de la bahía</p>
+                    </div>
+                    <div class="location-card">
+                        <h3>✨ Design District</h3>
+                        <p>Servicio de llantas área de lujo</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: #666;">
+                    <strong>También servimos:</strong> South Beach, Coral Gables, Coconut Grove, Key Biscayne, y áreas circundantes
+                </p>
+            </div>
+        </section>
+
+        <section class="emergency">
+            <div class="container">
+                <h2>🚨 SERVICIO DE EMERGENCIA 24/7 🚨</h2>
+                <p style="font-size: 1.4rem; margin-bottom: 30px;">
+                    ¿Reventón? ¿Llanta pinchada? ¿Pinchazo? ¿Varado en I-95?<br>
+                    <strong>¡Llama a TireFixMiami.com y estaremos ahí en 15 minutos!</strong>
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:3057843349" class="cta-button" onclick="trackCall('emergency_call_es')">📞 EMERGENCIA: (305) 784-3349</a>
+                    <a href="https://wa.me/13057843349?text=🚨 ¡EMERGENCIA! Tengo una llanta pinchada y necesito ayuda inmediata. Mi ubicación es:" class="cta-button whatsapp-button" onclick="trackWhatsApp('emergency_whatsapp_es')">🚨 WhatsApp Emergencia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h2 id="form-title" style="text-align: center; margin-bottom: 30px; color: #2a5298;">Get Your FREE Quote Now!</h2>
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Full Name / Nombre Completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" id="phone-label">Phone Number / Número de Teléfono *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email Address / Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="location" id="location-label">Your Location / Tu Ubicación</label>
+                        <select id="location" name="location">
+                            <option value="" id="location-default">Select your area / Selecciona tu área</option>
+                            <option value="wynwood">Wynwood</option>
+                            <option value="brickell">Brickell</option>
+                            <option value="midtown">Midtown</option>
+                            <option value="little-river">Little River</option>
+                            <option value="downtown">Downtown Miami</option>
+                            <option value="edgewater">Edgewater</option>
+                            <option value="morningside">Morningside</option>
+                            <option value="design-district">Design District</option>
+                            <option value="south-beach">South Beach</option>
+                            <option value="coral-gables">Coral Gables</option>
+                            <option value="other">Other Miami Area / Otra Área de Miami</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" id="service-label">Service Needed / Servicio Necesario</label>
+                        <select id="service" name="service">
+                            <option value="" id="service-default">What do you need? / ¿Qué necesitas?</option>
+                            <option value="flat-tire-emergency">🚨 Flat Tire Emergency / Emergencia Llanta Pinchada</option>
+                            <option value="tire-repair">Tire Repair/Patch / Reparación/Parche</option>
+                            <option value="tire-replacement">Tire Replacement / Cambio de Llanta</option>
+                            <option value="used-tires">Used Tires / Gomas Usadas</option>
+                            <option value="roadside-service">Roadside Service / Servicio en Carretera</option>
+                            <option value="quote">Free Quote / Cotización Gratis</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" id="message-label">Tell us about your tire issue / Cuéntanos sobre tu problema</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Describe your tire problem, vehicle type, location, urgency level..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submit-btn">🚀 GET MY FREE QUOTE NOW!</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #666;">
+                        <strong>⚡ Emergency?</strong> Call (305) 784-3349 for immediate service!
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TireFixMiami.com</h3>
+                    <p>Miami's premier mobile tire repair service</p>
+                    <p>24/7 Emergency Service</p>
+                    <p>Licensed & Insured</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <a href="tel:3057843349">📞 (305) 784-3349</a>
+                    <a href="https://wa.me/13057843349">💬 WhatsApp</a>
+                    <a href="mailto:info@tirefixmiami.com">✉️ info@tirefixmiami.com</a>
+                    <p>🌐 www.tirefixmiami.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p>Wynwood • Brickell • Midtown</p>
+                    <p>Downtown • Edgewater • Little River</p>
+                    <p>Morningside • Design District</p>
+                    <p>+ All Miami-Dade County</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p>• Mobile Tire Repair</p>
+                    <p>• Emergency Roadside Service</p>
+                    <p>• Quality Used Tires</p>
+                    <p>• Tire Installation & Balancing</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #555; padding-top: 20px; margin-top: 30px;">
+                <p>&copy; 2025 TireFixMiami.com | Mobile Tire Repair & Used Tires Miami</p>
+                <p>Serving Wynwood, Brickell, Midtown, Little River, Downtown Miami, Edgewater, Morningside & All Miami Areas</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="tel:3057843349" class="cta-button" onclick="trackCall('floating_call')">📞 CALL</a>
+        <a href="https://wa.me/13057843349?text=Hi! I need tire service in Miami" class="cta-button whatsapp-button" onclick="trackWhatsApp('floating_whatsapp')">💬 WhatsApp</a>
+    </div>
+
+    <!-- Success Popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="success-popup" id="successPopup">
+        <h3 style="color: #28a745; margin-bottom: 15px;">✅ Thank You!</h3>
+        <p id="success-message">We'll call you within 10 minutes with your free quote!</p>
+        <button onclick="closePopup()" style="background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; margin-top: 15px; cursor: pointer;">Close</button>
+    </div>
+
+    <script>
+        // Language switching functionality
+        function switchLanguage(lang) {
+            const enContent = document.getElementById('en-content');
+            const esContent = document.getElementById('es-content');
+            const enBtn = document.getElementById('en-btn');
+            const esBtn = document.getElementById('es-btn');
+            
+            if (lang === 'en') {
+                enContent.classList.add('active');
+                esContent.classList.remove('active');
+                enBtn.classList.add('active');
+                esBtn.classList.remove('active');
+                
+                // Update form labels
+                document.getElementById('form-title').textContent = 'Get Your FREE Quote Now!';
+                document.getElementById('submit-btn').textContent = '🚀 GET MY FREE QUOTE NOW!';
+            } else {
+                esContent.classList.add('active');
+                enContent.classList.remove('active');
+                esBtn.classList.add('active');
+                enBtn.classList.remove('active');
+                
+                // Update form labels
+                document.getElementById('form-title').textContent = '¡Obtén tu Cotización GRATIS Ahora!';
+                document.getElementById('submit-btn').textContent = '🚀 ¡OBTENER MI COTIZACIÓN GRATIS!';
+            }
+            
+            // Track language switch
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'language_switch', {
+                    'event_category': 'engagement',
+                    'event_label': lang
+                });
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Add timestamp and source
+            data.timestamp = new Date().toISOString();
+            data.source = 'tirefixmiami.com';
+            data.language = document.getElementById('en-content').classList.contains('active') ? 'en' : 'es';
+            
+            // Store lead data (in a real implementation, send to your backend)
+            console.log('New lead captured:', data);
+            
+            // Track form submission
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'lead_generation',
+                    'event_label': data.service || 'general'
+                });
+            }
+            
+            // Show success message
+            showSuccessPopup(data.language);
+            
+            // Reset form
+            this.reset();
+            
+            // In a real implementation, you'd send this to your backend:
+            // fetch('/api/leads', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify(data)
+            // });
+        });
+
+        // Success popup functions
+        function showSuccessPopup(language) {
+            const overlay = document.getElementById('overlay');
+            const popup = document.getElementById('successPopup');
+            const message = document.getElementById('success-message');
+            
+            if (language === 'es') {
+                message.textContent = '¡Te llamaremos en 10 minutos con tu cotización gratis!';
+            } else {
+                message.textContent = 'We\'ll call you within 10 minutes with your free quote!';
+            }
+            
+            overlay.classList.add('show');
+            popup.classList.add('show');
+            
+            // Auto-close after 5 seconds
+            setTimeout(() => {
+                closePopup();
+            }, 5000);
+        }
+
+        function closePopup() {
+            document.getElementById('overlay').classList.remove('show');
+            document.getElementById('successPopup').classList.remove('show');
+        }
+
+        // Click tracking functions
+        function trackCall(source) {
+            console.log('Phone call tracked:', source);
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'phone_call', {
+                    'event_category': 'conversion',
+                    'event_label': source
+                });
+            }
+        }
+
+        function trackWhatsApp(source) {
+            console.log('WhatsApp click tracked:', source);
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'whatsapp_click', {
+                    'event_category': 'conversion',
+                    'event_label': source
+                });
+            }
+        }
+
+        // Smooth scrolling for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Enhanced hover effects
+        document.querySelectorAll('.service-card, .location-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for scroll animations
+        document.querySelectorAll('.service-card, .location-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Emergency urgency effect
+        setInterval(() => {
+            const emergencyButtons = document.querySelectorAll('.emergency .cta-button');
+            emergencyButtons.forEach(btn => {
+                btn.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    btn.style.transform = 'scale(1)';
+                }, 200);
+            });
+        }, 3000);
+
+        // Auto-detect user's preferred language based on browser settings
+        document.addEventListener('DOMContentLoaded', function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('es')) {
+                switchLanguage('es');
+            }
+        });
+    </script>
+</body>
+</html>
